@@ -11,7 +11,7 @@ If TEST is set to *test* it will just print it to stdout, otherwise it will post
 
 ```
 ./create.sh
-kubectl apply -f smhi.yaml
+docker start smhi:2.2 ........ needs env vars...
 ```
 
 ## Kubernetes ArgoCD deployment
