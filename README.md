@@ -1,2 +1,8 @@
-# SMHI-forecast-to-InfluxDBv1
-Docker container for pulling SMHI forecast data and publish it to a InfluxDBv1 database
+# Installation
+
+Build and install cronjob
+
+```
+docker build -t smhi:latest .
+kubectl apply -f smhi.yaml
+```

@@ -1,0 +1,32 @@
+#apiVersion: v1
+#kind: Namespace
+#metadata:
+#    name: smhi
+---
+apiVersion: batch/v1
+kind: CronJob
+metadata:
+  name: smhi
+  namespace: smhi
+spec:
+  schedule: "10 * * * *"
+  jobTemplate:
+    spec:
+      template:
+        spec:
+          containers:
+          - name: smhi
+            image: registry.cube.local:5000/smhi:2.1
+            imagePullPolicy: Always
+            env:
+            - name: LAT
+              value: "62.406521"
+            - name: LONG
+              value: "17.362494"
+            - name: TEST
+              value: "test"
+            command:
+            - /bin/sh
+            - -c
+            - /bin/sh /run.sh
+          restartPolicy: OnFailure
