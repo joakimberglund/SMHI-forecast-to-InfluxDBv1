@@ -8,6 +8,7 @@ Edit smhi.yaml and set Lat/Long and TEST to test or prod
 If TEST is set to *test* it will just print it to stdout, otherwise it will post it to the InfluxDB database
 
 ## Build the docker container
+I use a local docker registry at registry.cube.local:5000
 ```
 ./build.sh
 ```
