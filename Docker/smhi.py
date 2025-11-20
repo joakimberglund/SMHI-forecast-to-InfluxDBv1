@@ -5,7 +5,7 @@ from calendar import timegm # Behövs för att konvertera tiden korrekt
 
 # --- Konfiguration ---
 # **Byt ut denna URL mot din InfluxDB-adress**
-URL = "http://influxdb:8086"
+URL = "http://192.168.0.73:8086"
 # ---------------------
 
 # Initiera variabeln i det globala scopet

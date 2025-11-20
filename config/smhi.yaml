@@ -4,14 +4,14 @@ metadata:
   name: smhi
   namespace: smhi
 spec:
-  schedule: "* * * * *"
+  schedule: "10 * * * *"
   jobTemplate:
     spec:
       template:
         spec:
           containers:
           - name: smhi
-            image: registry.cube.local:5000/smhi:2.5
+            image: registry.cube.local:5000/smhi:2.6
             imagePullPolicy: Always
             env:
             - name: LAT
