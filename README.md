@@ -1,3 +1,9 @@
+# SMHI
+
+Docker container that gets the SMHI forecast base on lat/long and posts it to an InfluxDB v1 database.
+
+The container is design for running in a kubernetes cluster.
+
 # Installation
 
 ## Configuration
