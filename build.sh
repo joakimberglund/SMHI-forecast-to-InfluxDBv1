@@ -1,8 +1,8 @@
 #!/bin/sh
 
 cd Docker
-docker build -t registry.cube.local:5000/smhi:2.6 .
-docker push registry.cube.local:5000/smhi:2.6
+docker build -t registry.cube.local:5000/smhi:2.7 .
+docker push registry.cube.local:5000/smhi:2.7
 cd ..
 
 # 1.0   Initial
