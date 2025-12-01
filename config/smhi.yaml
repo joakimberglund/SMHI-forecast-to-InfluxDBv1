@@ -11,7 +11,7 @@ spec:
         spec:
           containers:
           - name: smhi
-            image: registry.cube.local:5000/smhi:2.6
+            image: registry.cube.local:5000/smhi:2.7
             imagePullPolicy: Always
             env:
             - name: LAT
